@@ -40,7 +40,10 @@ def factorial(number: int) -> int:
 
 
 def use_continue() -> None:
-    pass
+    for i in rang(1,11):
+        if i==5:
+            continue
+    print(i)
 
 
 def verify_ages(groups: List[List[int]]) -> List[bool]:
@@ -48,13 +51,13 @@ def verify_ages(groups: List[List[int]]) -> List[bool]:
         a=False
         break
     else:
-        if
-            a=True
+        if :
             break
+            a=True
         else:
             if min(groups)<18:
-                a=False
                 break
+                a=False
             else:
 
     return []
