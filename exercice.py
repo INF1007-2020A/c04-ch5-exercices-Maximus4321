@@ -40,27 +40,28 @@ def factorial(number: int) -> int:
 
 
 def use_continue() -> None:
-    for i in rang(1,11):
-        if i==5:
+    for i in range(1,11):
+        if i == 5:
             continue
     print(i)
 
 
 def verify_ages(groups: List[List[int]]) -> List[bool]:
-    if listcount(groups)>10 or listcount(groups)<4:
-        a=False
-        break
+    if groups.count() > 10 or groups.count() < 4:
+        autorisation = False
     else:
-        if :
-            break
-            a=True
+        if groups.count(25)>0:
+            autorisation = True
         else:
             if min(groups)<18:
-                break
-                a=False
+                autorisation = False
             else:
+                if max(groups)>70 and groups.count(50) > 0:
+                    autorisation = False
+                else:
+                    autorisation = True
 
-    return []
+    return autorisation
 
 
 def main() -> None:
