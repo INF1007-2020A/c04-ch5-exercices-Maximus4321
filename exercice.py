@@ -20,18 +20,23 @@ def use_prefixes() -> List[str]:
 def prime_integer_summation() -> int:
     PossibleNumb=1
     Somme=0
-    for n in range(100):
+    n=0
+    while n<101:
         PossibleNumb+=1
         for i in range(2,PossibleNumb):
             if PossibleNumb%i==0:
                 break
-            else:
-                Somme+=PossibleNumb
+        else:
+            Somme+=PossibleNumb
+            n+=1
     return Somme
 
 
 def factorial(number: int) -> int:
-    return 0
+    factorielle=1
+    for a in range(1,number):
+        factorielle=factorielle*a
+    return factorielle
 
 
 def use_continue() -> None:
@@ -39,6 +44,19 @@ def use_continue() -> None:
 
 
 def verify_ages(groups: List[List[int]]) -> List[bool]:
+    if listcount(groups)>10 or listcount(groups)<4:
+        a=False
+        break
+    else:
+        if
+            a=True
+            break
+        else:
+            if min(groups)<18:
+                a=False
+                break
+            else:
+
     return []
 
 
